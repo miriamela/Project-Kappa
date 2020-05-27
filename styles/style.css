@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    color: inherit;
+    list-style-type: none;
+    text-decoration: none;
+}
+:root{
+    /*color*/
+    --primary-color: #099D8D;
+    --primary-color2: #14D9C4;
+    --light-color: #FFFFFF;
+   --dark-color: #000000;
+    --neutral-color: #54585A;
+    --neutral-color2: #B8B8B9;
+}
