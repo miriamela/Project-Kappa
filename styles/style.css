@@ -39,8 +39,17 @@ body {
 .wrapper {
   max-width: 1200px;
   width: 100%;
-  border: 2px solid blue;
   padding: 15px;
+}
+
+.vertical-padding-s {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.vertical-padding-l {
+  padding-top: 30px;
+  padding-bottom: 45px;
 }
 
 /*LAURA*/
@@ -82,7 +91,6 @@ header {
   align-content: center;
   line-height: 30px;
   font-size: var(--xsmall);
-  border: 1px solid blue;
   font-family: var(--secondary-font);
   font-weight: 500;
   color: white; /*NO FUNCIONA*/
@@ -90,7 +98,7 @@ header {
 }
 
 .menu2 > li {
-  border: 1px solid orchid;
+
 }
 
 .menu2 li a {
@@ -104,6 +112,55 @@ header {
 .quote {
   transform: translate(0, -50%);
   background-color: rgb(var(--light-color));
+}
+
+/*Junyi*/
+
+/*Equipo (Junyi)*/
+.main-article {
+  text-align: center;
+}
+
+h2.main {
+  color: rgb(var(--primary-color2));
+  font-family: var(--secondary-font);
+  font-size: var(--xxlarge);
+  line-height: 45px;
+  margin-top: 0;
+  margin-bottom: 0;
+  }
+
+article p {
+  color: rgb(var(--neutral-color));
+  font-family: var(--primary-font);
+  font-size: var(--small);
+  line-height: 24px;
+}
+
+/* Rombo (Junyi) */
+
+.square {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(var(--light-color));
+  margin: auto;
+  transform: translate(0, 15px) rotate(45deg);
+}
+
+/* Fortalezas y debilidades (Junyi) */
+
+.secondary {
+  background-color: rgba(var(--neutral-color2), 0.2);
+  text-align: center;
+}
+
+h3 {
+  color: rgb(var(--primary-color));
+  font-family: var(--secondary-font);
+  font-size: var(--xlarge);
+  line-height: 45px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Miriam - Marta */
@@ -228,6 +285,34 @@ li {
     padding: 45px;
   }
 
+  /* Mediaqueries tablet Junyi*/
+  
+  h2.main {
+    color: rgb(var(--primary-color));
+  }
+
+  .secondary .wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .secondary-article {
+    display: inline;
+    width: 50%;
+  }
+
+  .secondary-article:first-child {
+    width: 50%;
+    padding-right: 15px;
+  }
+
+  .secondary-article:last-child {
+    width: 50%;
+    padding-left: 15px;
+  }
+
+  /* Mediaqueries tablet Miriam y Marta*/
   .title-tab {
     padding-bottom: 40px;
     /* background-color: blueviolet; */
@@ -328,6 +413,37 @@ li {
 }
 
 @media all and (min-width: 1200px) {
+
+.wrapper {
+  padding: 45px;
+}
+/* Mediaqueries desktop Junyi*/
+
+h2.main {
+  /*poner en común con Marta y Miriam, asegurarnos de que la clase es distinta de la del h2 de Laura*/
+  color: rgb(var(--primary-color));
+}
+
+.secondary .wrapper {
+  display: flex;
+}
+
+.secondary-article {
+  width: 50%;
+}
+
+.secondary-article:first-child {
+  width: 50%;
+  padding-right: 22.5px;
+}
+
+.secondary-article:last-child {
+  width: 50%;
+  padding-left: 22.5px;
+}
+
+/* Mediaqueries desktop Miriam y Marta*/
+
   .title-tab {
     background-color: green;
   }
