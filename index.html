@@ -1,262 +1,204 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/reset.css" />
-    <link rel="stylesheet" href="/styles/style.css" />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+  rel="stylesheet"
+/>
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>Kappa </title>
+</head>
   <body>
-    <div class="maindiv">
-      <header class="top">
-        <a href="">
-          <h1><img src="" alt="Kappa" /></h1>
-        </a>
-        <nav class="menu1">
-          <ul>
+    <header>
+      <div class="mainheader">
+        <div class="wrapper">
+          <!-- hay que poner el wrapper dentro del cuadrado del main header (que lleva el color de fondo) para que no haya margen. Probar poniendo el wrapper antes de mainheader para comparar -->
+          <a class="header-logo" href="#" title="Ir a la home">
+            <h1>
+              <img src="./images/kappa.jpg" alt="Kappa Logo" />
+            </h1>
+          </a>
+        </div>
+      </div>
+      <nav class="menu1">
+        <div class="wrapper">
+          <ul class="menu2">
             <li><a href="">EQUIPO</a></li>
             <li><a href="">QUIÉNES SOMOS</a></li>
             <li><a href="">CONTACTO</a></li>
           </ul>
-        </nav>
-      </header>
-      <section class="hero">
-        <h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis
-          sint magnam tempora odio vitae.
-        </h2>
-      </section>
-    </div>
-    <main>
-      <section class="team">
-        <article class="content first">
-          <h2>EQUIPO</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consectetur, dolorum placeat temporibus atque nobis unde illum illo
-            obcaecati provident reprehenderit officia ut, ex id distinctio
-            molestias iusto totam cum aliquam.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            accusamus esse aliquam obcaecati ipsa provident quibusdam aspernatur
-            aut delectus rerum, eaque corrupti debitis, vitae eveniet eius
-            asperiores iste tempore.
-          </p>
-        </article>
-        <article class="content second">
-          <h3>Fortaleza</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
-            quas consequuntur est nostrum molestiae deleniti! Enim assumenda
-            iste ea quo ipsam expedita corporis, dicta cumque laudantium iusto,
-            illo quibusdam neque.
-          </p>
-        </article>
-        <article class="content second">
-          <h3>Debilidades</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
-            magnam a saepe deserunt, quod odio facilis corrupti, alias molestiae
-            eveniet molestias, recusandae mollitia sequi quasi possimus
-            reprehenderit voluptates. Vel, deserunt!
-          </p>
-        </article>
-      </section>
-
-      <!-- AQUI EMPIEZA BLOQUE TARJETA DE PERSONAS
-   ----------------
-   -----------------
-   -----------------
-   -----------------
-   -----------------
-    -->
-
-      <section class="wrapper">
-        <h2 class="title-tab">QUIÉNES SOMOS</h2>
-        <article class="name">
-          <div class="picture">
-            <img src="/images/prueba_foto.jpg" alt="foto" class="foto" />
-          </div>
-          <div class="description">
-            <h4>Marisol Peña</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              rutrum ullamcorper mauris, vel convallis metus eleifend in. Cras
-              hendrerit at ante eget auctor. Nunc maximus ipsum non volutpat
-              convallis. Morbi interdum neque et aliquam varius.
-            </p>
-            <div class="icons">
-              <ul class="list-icons">
-                <li>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-github-alt"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-envelope"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-        <article class="name-left">
-          <div class="picture">
-            <img src="/images/prueba_foto.jpg" alt="foto" class="foto" />
-          </div>
-          <div class="description">
-            <h4>Junyi Ji</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              aut, deserunt nulla architecto repellendus quod voluptatem
-              corporis eum quidem ipsum optio corrupti ipsa? Corporis
-              reprehenderit quis, facilis officia placeat eos!
-            </p>
-            <div class="icons">
-              <ul class="list-icons">
-                <li>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-github-alt"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-envelope"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-        <article class="name">
-          <div class="picture">
-            <img src="/images/prueba_foto.jpg" alt="foto" class="foto" />
-          </div>
-          <div class="description">
-            <h4>Laura Moreaux</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              aut, deserunt nulla architecto repellendus quod voluptatem
-              corporis eum quidem ipsum optio corrupti ipsa? Corporis
-              reprehenderit quis, facilis officia placeat eos!
-            </p>
-            <div class="icons">
-              <ul class="list-icons">
-                <li>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-github-alt"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-envelope"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-        <article class="name-left">
-          <div class="picture">
-            <img src="/images/prueba_foto.jpg" alt="foto" class="foto" />
-          </div>
-          <div class="description">
-            <h4>Miriam Grossi</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              aut, deserunt nulla architecto repellendus quod voluptatem
-              corporis eum quidem ipsum optio corrupti ipsa? Corporis
-              reprehenderitAccusamus aut, deserunt nulla architecto repellendus
-              quod voluptatem corporis eum quidem ipsum optio corrupti ipsa?
-              Corporis reprehenderit
-            </p>
-            <div class="icons">
-              <ul class="list-icons">
-                <li>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-github-alt"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-envelope"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-        <article class="name">
-          <div class="picture">
-            <img src="/images/prueba_foto.jpg" alt="foto" class="foto" />
-          </div>
-          <div class="description">
-            <h4>Marta García</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              aut, deserunt nulla architecto repellendus quod voluptatem
-              corporis eum quidem ipsum optio corrupti ipsa? Corporis
-              reprehenderit quis, facilis officia placeat eos!
-            </p>
-            <div class="icons">
-              <ul class="list-icons">
-                <li>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-github-alt"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-envelope"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </section>
-    </main>
-
-    <!-- AQUI TERMINA BLOQUE TARJETA DE PERSONAS
-   ----------------
-   -----------------
-   -----------------
-   -----------------
-   -----------------
-    -->
-    <footer class="footer">
-      <div class="copyright">
-        <h5>Copyright</h5>
-      </div>
-      <a href="">
-        <h5><img src="" alt="Adalab" /></h5>
-      </a>
-      <nav class="menu2">
-        <ul>
-          <li><a href="">EQUIPO</a></li>
-          <li><a href="">QUIÉNES SOMOS</a></li>
-          <li><a href="">CONTACTO</a></li>
-        </ul>
+        </div>
       </nav>
-    </footer>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <img
+            src="./images/fotoco.jpg"
+            class="team"
+            alt="espacio-coworking-femenino"
+          />
+        </div>
+
+        <div class="wrapper">
+          <!-- clase wrapper añadida -->
+          <div class="quote wrapper">
+            <!-- clase quote añadida. También wrapper de nuevo: porque hay dos padding -->
+            <h2>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- Resto de secciones -->
+      </section>
+       <!-- AQUI EMPIEZA BLOQUE TARJETA DE PERSONAS
+   ----------------
+   -----------------
+   -----------------
+   -----------------
+   -----------------
+    -->
+
+    <section class="wrapper">
+      <h2 class="title-tab">QUIÉNES SOMOS</h2>
+      <article class="name">
+        <div class="picture">
+          <img src="/images/prueba_foto.jpg" alt="foto" class="foto" />
+        </div>
+        <div class="description">
+          <h4>Nombre Apellido</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            rutrum ullamcorper mauris, vel convallis metus eleifend in. Cras
+            hendrerit at ante eget auctor. Nunc maximus ipsum non volutpat
+            convallis. Morbi interdum neque et aliquam varius.
+          </p>
+          <div class="icons">
+            <ul class="list-icons">
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-github-alt"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article class="name-left">
+        <div class="picture">
+          <img src="/images/prueba_foto.jpg" alt="foto" class="foto" />
+        </div>
+        <div class="description">
+          <h4>Nombre Apellido</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            aut, deserunt nulla architecto repellendus quod voluptatem
+            corporis eum quidem ipsum optio corrupti ipsa? Corporis
+            reprehenderit quis, facilis officia placeat eos!
+          </p>
+          <div class="icons">
+            <ul class="list-icons">
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-github-alt"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article class="name">
+        <div class="picture">
+          <img src="/images/prueba_foto.jpg" alt="foto" class="foto" />
+        </div>
+        <div class="description">
+          <h4>Nombre Apellido</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            aut, deserunt nulla architecto repellendus quod voluptatem
+            corporis eum quidem ipsum optio corrupti ipsa? Corporis
+            reprehenderit quis, facilis officia placeat eos!
+          </p>
+          <div class="icons">
+            <ul class="list-icons">
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-github-alt"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article class="name-left">
+        <div class="picture">
+          <img src="/images/prueba_foto.jpg" alt="foto" class="foto" />
+        </div>
+        <div class="description">
+          <h4>Nombre Apellido</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            aut, deserunt nulla architecto repellendus quod voluptatem
+            corporis eum quidem ipsum optio corrupti ipsa? Corporis
+            reprehenderitAccusamus aut, deserunt nulla architecto repellendus
+            quod voluptatem corporis eum quidem ipsum optio corrupti ipsa?
+            Corporis reprehenderit
+          </p>
+          <div class="icons">
+            <ul class="list-icons">
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-github-alt"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- AQUI TERMINA BLOQUE TARJETA DE PERSONAS
+ ----------------
+ -----------------
+ -----------------
+ -----------------
+ -----------------
+  -->
+    </main>
+    <footer></footer>
   </body>
 </html>

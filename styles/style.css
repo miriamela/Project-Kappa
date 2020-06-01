@@ -3,6 +3,8 @@
   color: inherit;
   list-style-type: none;
   text-decoration: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 :root {
@@ -15,17 +17,11 @@
   --neutral-color: 84, 88, 90;
   --neutral-color2: 184, 184, 185;
 
-  /* --primary-color: #099d8d;
-  --primary-color2: #14d9c4;
-  --light-color: #ffffff;
-  --dark-color: #000000;
-  --neutral-color: #54585a;
-  --neutral-color2: #b8b8b9; */
-
-  /* font */
+  /*font*/
   --primary-font: "Open Sans", Arial, Helvetica, sans-serif;
   --secondary-font: "Rubik", Arial, Helvetica, sans-serif;
-  /* font size */
+
+  /*font size*/
   --xxsmall: 14px;
   --xsmall: 15px;
   --small: 16px;
@@ -35,13 +31,82 @@
   --xxlarge: 24px;
 }
 
+body {
+  background-color: rgb(var(--light-color));
+  /*añadir! Para facilitarle la vida al diseñador si decide cambiar el color en un futuro, por el div de 30px x 30px*/
+}
+
 .wrapper {
   max-width: 1200px;
-  margin: auto;
   width: 100%;
   border: 2px solid blue;
   padding: 15px;
 }
+
+/*LAURA*/
+
+header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 60px;
+}
+
+.mainheader {
+  background-color: rgba(var(--primary-color), 0.95);
+}
+
+.header-logo {
+  display: inline-block;
+  width: 25px;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+.mainheader .wrapper {
+  display: flex;
+  justify-content: center; /*para que el logo esté centrado*/
+}
+
+.menu1 {
+  height: 45px;
+  background-color: rgba(var(--primary-color2), 0.9);
+}
+
+.menu2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  line-height: 30px;
+  font-size: var(--xsmall);
+  border: 1px solid blue;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  color: white; /*NO FUNCIONA*/
+  color: var(--light-color); /*NO FUNCIONA*/
+}
+
+.menu2 > li {
+  border: 1px solid orchid;
+}
+
+.menu2 li a {
+  display: inline-block;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.quote {
+  transform: translate(0, -50%);
+  background-color: rgb(var(--light-color));
+}
+
+/* Miriam - Marta */
 
 .title-tab {
   /* background-color: darkkhaki; */
