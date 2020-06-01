@@ -40,6 +40,7 @@ body {
   max-width: 1200px;
   width: 100%;
   padding: 15px;
+  margin: auto;
 }
 
 /*LAURA*/
@@ -110,12 +111,11 @@ header {
   background-color: rgb(var(--light-color));
   text-align: center;
   padding: 15px;
-}
-
-.quote h2 {
   font-family: var(--primary-font);
   font-size: var(--medium);
   font-weight: 600;
+  width: 290px;
+  margin: auto;
 }
 
 /*Junyi*/
@@ -288,11 +288,7 @@ li {
   .wrapper {
     padding: 45px;
   }
-}
 
-/* Mediaqueries tablet Laura*/
-
-@media all and (min-width: 768px) {
   .header-tablet {
     height: 60px;
     display: flex;
@@ -345,7 +341,12 @@ li {
   }
 
   .quote {
+    background-color: rgba(var(--light-color), 0.7);
+    text-align: center;
     padding: 15px 45px;
+    position: absolute;
+    bottom: -55;
+    width: 441px;
   }
 
   /* Mediaqueries tablet Junyi*/
@@ -503,10 +504,5 @@ li {
     width: 50%;
     padding-left: 22.5px;
   }
-
-  /* Mediaqueries desktop Miriam y Marta*/
-
-  .title-tab {
-    background-color: green;
-  }
 }
+/* Mediaqueries desktop Miriam y Marta*/
