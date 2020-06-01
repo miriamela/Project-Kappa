@@ -39,7 +39,6 @@ body {
 .wrapper {
   max-width: 1200px;
   width: 100%;
-  border: 2px solid blue;
   padding: 15px;
 }
 
@@ -54,11 +53,24 @@ header {
 
 .mainheader {
   background-color: rgba(var(--primary-color), 0.95);
+  height: 60px;
+}
+
+.mainheader .wrapper {
+  padding: 0px;
+  margin: 0px;
+}
+.header-logo h1 {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
 }
 
 .header-logo {
   display: inline-block;
-  width: 25px;
+  margin: 0px;
+  height: 30%;
+  width: 30%;
 }
 
 .header-logo img {
@@ -80,21 +92,14 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  line-height: 30px;
   font-size: var(--xsmall);
-  border: 1px solid blue;
   font-family: var(--secondary-font);
   font-weight: 500;
-  color: white; /*NO FUNCIONA*/
-  color: var(--light-color); /*NO FUNCIONA*/
-}
-
-.menu2 > li {
-  border: 1px solid orchid;
 }
 
 .menu2 li a {
   display: inline-block;
+  color: white; /*NO FUNCIONA*/
 }
 
 .hero img {
