@@ -403,18 +403,17 @@ li {
   .quote {
     background-color: rgba(var(--light-color), 0.7);
     text-align: center;
-<<<<<<< HEAD
-=======
     padding: 15px;
     position: relative;
     bottom: 70;
     width: 441px;
   }
 
+  /*Revisar quote*/
+
   .quote {
     background-color: rgba(var(--light-color), 0.7);
     text-align: center;
->>>>>>> d954c8b474a79e56585ca8ec45caaf14030df57c
     padding: 15px 45px;
     position: absolute;
     bottom: -55;
@@ -617,7 +616,6 @@ li {
     width: 50%;
     padding-left: 22.5px;
   }
-<<<<<<< HEAD
 
   /* Mediaqueries desktop Miriam y Marta*/
   .description {
@@ -638,7 +636,5 @@ li {
     padding-left: 180px;
     padding-right: 20px;
   }
-=======
->>>>>>> d954c8b474a79e56585ca8ec45caaf14030df57c
 }
 /* Mediaqueries desktop Miriam y Marta*/
