@@ -45,11 +45,15 @@ body {
 
 /*LAURA*/
 
-header {
+.header-tablet {
   position: fixed;
   z-index: 999;
   width: 100%;
   height: 60px;
+}
+
+.header-container {
+  max-width: 1200px;
 }
 
 .mainheader {
@@ -106,12 +110,13 @@ header {
 
 .hero img {
   width: 100%;
+  max-height: 550px;
+  object-fit: cover;
 }
 
 .quote {
   transform: translate(0, -50%);
   background-color: rgb(var(--light-color));
-  text-align: center;
   padding: 15px;
   font-family: var(--primary-font);
   font-size: var(--medium);
@@ -147,6 +152,7 @@ article p {
 
 .square {
   width: 30px;
+  max-width: 1200px;
   height: 30px;
   background-color: rgb(var(--light-color));
   margin: auto;
@@ -359,12 +365,16 @@ li {
   }
 
   .header-tablet {
+    background-color: rgb(var(--primary-color));
+  }
+
+  .header-container {
+    margin: auto;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    background-color: rgb(var(--primary-color));
   }
 
   .mainheader {
@@ -402,21 +412,9 @@ li {
 
   .quote {
     background-color: rgba(var(--light-color), 0.7);
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 70;
-    width: 441px;
-  }
-
-  /*Revisar quote*/
-
-  .quote {
-    background-color: rgba(var(--light-color), 0.7);
-    text-align: center;
     padding: 15px 45px;
-    position: absolute;
-    bottom: -55;
+    position: relative;
+    transform: translate(-220px, -70px);
     width: 441px;
   }
 
@@ -589,7 +587,8 @@ li {
 
 @media all and (min-width: 1200px) {
   .wrapper {
-    padding: 138px;
+    padding-left: 138px;
+    padding-right: 138px;
     margin: auto;
   }
   /* Mediaqueries desktop Junyi*/
