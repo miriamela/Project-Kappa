@@ -74,6 +74,8 @@ header {
 
 .header-logo img {
   height: 60px;
+  width: 100%;
+  object-fit: contain;
 }
 
 .mainheader .wrapper {
@@ -110,12 +112,11 @@ header {
   background-color: rgb(var(--light-color));
   text-align: center;
   padding: 15px;
-}
-
-.quote h2 {
   font-family: var(--primary-font);
   font-size: var(--medium);
   font-weight: 600;
+  width: 290px;
+  margin: auto;
 }
 
 /*Junyi*/
@@ -170,19 +171,13 @@ h3 {
 /* Miriam - Marta */
 
 .title-tab {
-  /* background-color: darkkhaki; */
   text-align: center;
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center; */
   color: rgb(var(--primary-color));
   font-family: var(--secondary-font);
   font-size: var(--xxlarge);
-  /* sabado */
+  padding-top: 30px;
+  padding-bottom: 20px;
   font-weight: 500;
-
-  /* border: 1px solid red; */
-
   width: 100%;
 }
 .name {
@@ -257,8 +252,7 @@ i {
 
   height: 30px;
   width: 124px;
-
-  padding: 0px;
+  padding-top: 15px;
   margin: auto;
 }
 .list-icons li:nth-child(1):after {
@@ -277,6 +271,80 @@ i {
 li {
   display: inline-block;
   padding: 3px;
+}
+
+.footer .wrapper {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: rgb(var(--light-color));
+  border-top: 1px solid rgb(var(--neutral-color));
+  width: 100%;
+  height: 250px;
+}
+
+.footer .logo-item {
+  order: 1;
+}
+
+/* Imagen Adalab */
+.footer .logo-item {
+  width: 115.99px;
+  height: 45px;
+  margin-top: 30px;
+  margin-bottom: 45px;
+  padding: 0px;
+}
+
+.footer .logo-item img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Copyright equipo*/
+
+.footer .copyright {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.footer .copyright h5 {
+  padding: 0px;
+  margin: 0px;
+  font-size: var(--xxsmall);
+  font-family: var(--primary-font);
+  color: rgb(var(--neutral-color2));
+}
+
+/* Menú de Navegación */
+
+.footer .menu-footer {
+  color: rgb(var(--neutral-color));
+  font-family: var(--primary-font);
+  font-size: var(--xxsmall);
+  font-weight: 600;
+  margin: 0px;
+}
+
+.footer .menu-footer ul {
+  text-align: center;
+  padding: 0;
+  line-height: 20px;
+  margin: 0;
+}
+
+.footer .menu-footer ul li {
+  display: block;
 }
 
 /* RESPONSIVE ----------------------------------------
@@ -338,14 +406,10 @@ li {
   .quote {
     background-color: rgba(var(--light-color), 0.7);
     text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 70;
-    width: 441px;
-  }
-
-  .quote {
     padding: 15px 45px;
+    position: absolute;
+    bottom: -55;
+    width: 441px;
   }
 
   /* Mediaqueries tablet Junyi*/
@@ -454,11 +518,51 @@ li {
     padding-left: 0px;
     padding-right: 0px;
   }
-  .list-icons {
-    display: inline;
 
+  .list-icons {
+    display: inline-block;
+  }
+
+  .footer {
+    height: 170px;
+  }
+
+  .footer .wrapper {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 0;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  /* Imagen Adalab */
+
+  .footer .logo-item {
+    margin-top: 15px;
+    margin-bottom: 60px;
     padding: 0px;
-    margin: auto;
+    margin-left: -10px;
+  }
+
+  /* Copyright equipo*/
+
+  .footer .copyright {
+    margin-bottom: 0px;
+  }
+
+  /* Menú de Navegación */
+  footer .menu-footer {
+    position: absolute;
+    right: 45px;
+    top: 25px;
+  }
+
+  .footer .menu-footer ul {
+    text-align: right;
+    padding: 0;
+    line-height: 30px;
+    margin: 0;
   }
 
   /* .header-menu {
@@ -477,7 +581,8 @@ li {
 
 @media all and (min-width: 1200px) {
   .wrapper {
-    padding: 45px;
+    padding: 138px;
+    margin: auto;
   }
   /* Mediaqueries desktop Junyi*/
 
@@ -505,8 +610,22 @@ li {
   }
 
   /* Mediaqueries desktop Miriam y Marta*/
-
-  .title-tab {
-    background-color: green;
+  .description {
+    /* background-color: rgba(210, 187, 187, 0.5); */
+    width: 70%;
+    text-align: left;
+    /* sabado */
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 180px;
+  }
+  .name-left .description {
+    /* background-color: rgba(210, 187, 187, 0.5); */
+    width: 70%;
+    text-align: right;
+    /* sabado */
+    padding-top: 5px;
+    padding-left: 180px;
+    padding-right: 20px;
   }
 }
