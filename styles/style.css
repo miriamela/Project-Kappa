@@ -105,7 +105,7 @@ body {
 
 .menu2 li a {
   display: inline-block;
-  color: white; /*NO FUNCIONA*/
+  color: white; /*NO FUNCIONA LA VARIABLE*/
 }
 
 .hero img {
@@ -359,6 +359,9 @@ li {
 ------------
 ------------
 */
+
+/* Mediaqueries tablet Laura*/
+
 @media all and (min-width: 768px) {
   .wrapper {
     padding: 45px;
@@ -591,6 +594,7 @@ li {
     padding-right: 138px;
     margin: auto;
   }
+
   /* Mediaqueries desktop Junyi*/
 
   h2.main {
