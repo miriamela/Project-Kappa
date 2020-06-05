@@ -1,0 +1,104 @@
+ /*Equipo (Junyi)*/
+ .main-article {
+    text-align: center;
+  }
+  
+  h2.main {
+    color: $primary-color2;
+    font-family: $secondary-font;
+    font-size: $xxlarge;
+    line-height: 45px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  article p {
+    color: $neutral-color;
+    font-family: $primary-font;
+    font-size: $small;
+    line-height: 24px;
+  }
+  
+  /* Rombo (Junyi) */
+  
+  .square {
+    width: 30px;
+    max-width: 1200px;
+    height: 30px;
+    background-color: $light-color;
+    margin: auto;
+    transform: translate(0, 15px) rotate(45deg);
+  }
+  
+  /* Fortalezas y debilidades (Junyi) */
+  
+  .secondary {
+    background-color: rgba(84, 88, 90, 0.2);
+    text-align: center;
+  }
+  
+  h3 {
+    color: $primary-color;
+    font-family: $secondary-font;
+    font-size: $xlarge;
+    line-height: 45px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+   //MEDIAQUERIES  
+    /* Mediaqueries tablet Junyi*/
+    @media all and (min-width: 768px) {
+    h2.main {
+      color: $primary-color;
+    }
+  
+    .secondary .wrapper {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+  
+    .secondary-article {
+      display: inline;
+      width: 50%;
+    }
+  
+    .secondary-article:first-child {
+      width: 50%;
+      padding-right: 15px;
+    }
+  
+    .secondary-article:last-child {
+      width: 50%;
+      padding-left: 15px;
+    }
+  }
+
+  @media all and (min-width: 1200px) {
+
+    /* Mediaqueries desktop Junyi*/
+  
+    h2.main {
+      /*poner en común con Marta y Miriam, asegurarnos de que la clase es distinta de la del h2 de Laura*/
+      color: $primary-color;
+    }
+  
+    .secondary .wrapper {
+      display: flex;
+    }
+  
+    .secondary-article {
+      width: 50%;
+    }
+  
+    .secondary-article:first-child {
+      width: 50%;
+      padding-right: 22.5px;
+    }
+  
+    .secondary-article:last-child {
+      width: 50%;
+      padding-left: 22.5px;
+    }
+  }
