@@ -13,12 +13,18 @@
 
     @media all and (min-width: 768px) {
       margin: auto;
+      padding: 0px 45px;
       height: 60px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       text-align: center;
     }
+
+    @media all and (min-width: 1200px) {
+      padding: 0px 138px;
+    }
+
     & .mainheader {
       background-color: rgba(9, 157, 141, 0.95);
       height: 60px;
