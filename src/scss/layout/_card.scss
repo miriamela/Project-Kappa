@@ -1,3 +1,5 @@
+$name-width: 100%;
+
 .title-tab {
   text-align: center;
   color: $primary-color;
@@ -7,16 +9,17 @@
   padding-bottom: 20px;
   font-weight: 500;
   width: 100%;
-  }
+}
+
 .name {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  
-    /* border: 1px solid red; */
+  width: $name-width;
+
+  /* border: 1px solid red; */
 }
 .name-left {
   display: flex;
@@ -24,9 +27,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  
-    /* border: 1px solid red; */
+  width: $name-width;
+
+  /* border: 1px solid red; */
 }
 .picture {
   width: 180px;
@@ -63,7 +66,6 @@
   font-size: $small;
   font-weight: 300;
   line-height: 24px;
-  /* sabado*/
   padding-left: 10px;
   padding-right: 10px;
   width: 100%;
