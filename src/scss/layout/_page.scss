@@ -7,23 +7,10 @@ body {
   width: 100%;
   padding: 15px;
   margin: auto;
-<<<<<<< HEAD
-}
-
-@media all and (min-width: 768px) {
-  .wrapper {
+  @media all and (min-width: 768px) {
     padding: 0 45px;
   }
-}
-
-@media all and (min-width: 1200px) {
-  .wrapper {
-=======
-  @media all and (min-width: 768px) {
-    padding: 45px;
-  }
   @media all and (min-width: 1200px) {
->>>>>>> team
     padding-left: 138px;
     padding-right: 138px;
     margin: auto;
