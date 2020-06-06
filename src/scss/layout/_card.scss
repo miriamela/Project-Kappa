@@ -7,7 +7,7 @@
   padding-bottom: 20px;
   font-weight: 500;
   width: 100%;
-  }
+}
 .name {
   display: flex;
   flex-direction: column;
@@ -15,8 +15,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  
-    /* border: 1px solid red; */
+
+  /* border: 1px solid red; */
 }
 .name-left {
   display: flex;
@@ -25,8 +25,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  
-    /* border: 1px solid red; */
+
+  /* border: 1px solid red; */
 }
 .picture {
   width: 180px;
@@ -57,7 +57,7 @@
   & p {
     text-align: center;
     /* background-color: cyan; */
-  
+
     color: $neutral-color;
     font-family: $primary-font;
     font-size: $small;
@@ -79,106 +79,108 @@
     width: 126px;
     padding-top: 15px;
     margin: auto;
-  
-      & li:nth-child(1):after {
-        content: "·";
-        color: $primary-color;
-      }
-      & li:nth-child(2):after {
-        content: "·";
-        color: $primary-color;
-      }
-      & li:nth-child(3):after {
+
+    & li:nth-child(1):after {
       content: "·";
       color: $primary-color;
+    }
+    & li:nth-child(2):after {
+      content: "·";
+      color: $primary-color;
+    }
+    & li:nth-child(3):after {
+      content: "·";
+      color: $primary-color;
+    }
+    & li {
+      display: inline-block;
+      padding: 3px;
+
+      & i {
+        color: $primary-color;
       }
-      & li {
-        display: inline-block;
-        padding: 3px;
-  
-        & i {
-          color: $primary-color;
-        }
-      }
+    }
   }
 }
 
-.wrapper{
-  @include tablet{
+.wrapper {
+  @include tablet {
     .title-tab {
-    padding-bottom: 40px;
-    /* background-color: blueviolet; */
+      padding-bottom: 40px;
+      /* background-color: blueviolet; */
     }
-    .name { /*name on the left*/
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    /* border: 1px solid red; */
-    /* background-color: rgba(152, 228, 152, 0.5); */
-    & .description {
-      /* background-color: rgba(210, 187, 187, 0.5); */
-      width: 70%;
-      text-align: left;
-      /* sabado */
-      padding-top: 5px;
-      padding-left: 20px;
-      padding-right: 10px;
-      & h4 {
+    .name {
+      /*name on the left*/
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      /* border: 1px solid red; */
+      /* background-color: rgba(152, 228, 152, 0.5); */
+      & .description {
+        /* background-color: rgba(210, 187, 187, 0.5); */
+        width: 70%;
         text-align: left;
-        margin: 0px;
+        /* sabado */
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-right: 10px;
+        & h4 {
+          text-align: left;
+          margin: 0px;
         }
-      & p {
-        margin-top: 5px;
-        text-align: left;
-        padding-left: 0px;
-        padding-right: 0px;
+        & p {
+          margin-top: 5px;
+          text-align: left;
+          padding-left: 0px;
+          padding-right: 0px;
         }
       }
     }
-  .name-left { /*name right*/
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    /* border: 1px solid red; */
-    & .description {
-      width: 70%;
-      text-align: right;
-      padding-top: 5px;
-      padding-left: 10px;
-      padding-right: 20px;
-      & h4 {
+    .name-left {
+      /*name right*/
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      /* border: 1px solid red; */
+      & .description {
+        width: 70%;
+        text-align: right;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 20px;
+        & h4 {
           text-align: right;
           margin: 0px;
         }
-      & p {
-        margin-top: 5px;
-        text-align: right;
-        padding-left: 0px;
-        padding-right: 0px;
+        & p {
+          margin-top: 5px;
+          text-align: right;
+          padding-left: 0px;
+          padding-right: 0px;
         }
       }
     }
-  .picture {
-    width: 30%;
-    display: inline;
-    text-align: right;
+    .picture {
+      width: 30%;
+      display: inline;
+      text-align: right;
       & .foto {
         width: 100%;
       }
     }
-  .list-icons {
-    display: inline-block;
+    .list-icons {
+      display: inline-block;
     }
   }
 }
-.wrapper{
+.wrapper {
   @include display {
     .description {
       width: 70%;
