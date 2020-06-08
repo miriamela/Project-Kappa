@@ -1,5 +1,5 @@
 <article class="main-contact">
-  <div class="wrapper-contact">
+  <div class="wrapper">
     <h2 class="contact">CONTACTO</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
@@ -13,16 +13,16 @@
     </p>
   </div>
 </article>
-<form action="https://formspree.io/xnqgdedq" method="POST">
+<form class="wrapper form" action="https://formspree.io/xnqgdedq" method="POST">
   <div>
-    <label
-      >Nombre completo <span class="asterisk">*</span>
+    <label>
+      Nombre completo <span class="asterisk">*</span>
       <input type="text" placeholder="Nombre..." id="name" name="name" />
     </label>
   </div>
   <div>
-    <label
-      >Email <span class="asterisk">*</span>
+    <label>
+      Email <span class="asterisk">*</span>
       <input
         type="email"
         placeholder="Email"
@@ -33,20 +33,14 @@
     </label>
   </div>
   <div>
-    <label
-      >Teléfono
+    <label>
+      Teléfono
       <input type="tel" placeholder="Ej: 123456789" id="phone" name="phone" />
     </label>
   </div>
   <div>
     <label for="comments">Mensaje <span class="asterisk">*</span></label>
-    <textarea
-      class="block"
-      id="comments"
-      name="comments"
-      rows="8"
-      cols="80"
-    ></textarea>
+    <textarea id="comments" name="comments" rows="8" cols="80"></textarea>
   </div>
   <div><input class="send" type="submit" value="ENVIAR" /></div>
 </form>
