@@ -14,19 +14,12 @@
   </div>
 </article>
 <form class="wrapper form" action="https://formspree.io/xnqgdedq" method="POST">
-  <div>
-    <label>
-      Nombre completo <span class="asterisk">*</span>
-      <input
-        type="text"
-        placeholder="Nombre..."
-        id="name"
-        name="name"
-        required
-      />
-    </label>
-  </div>
-  <div>
+  <label>
+    Nombre completo <span class="asterisk">*</span>
+    <input type="text" placeholder="Nombre..." id="name" name="name" required />
+  </label>
+
+  <div class="flex">
     <label>
       Email <span class="asterisk">*</span>
       <input
@@ -40,8 +33,7 @@
         required
       />
     </label>
-  </div>
-  <div>
+
     <label>
       Teléfono
       <input
@@ -53,17 +45,17 @@
       />
     </label>
   </div>
-  <div>
-    <label for="comments">Mensaje <span class="asterisk">*</span></label>
-    <textarea
-      id="comments"
-      name="comments"
-      rows="8"
-      cols="80"
-      placeholder="¿Qué necesitas?"
-      required
-    ></textarea>
-  </div>
+
+  <label for="comments">Mensaje <span class="asterisk">*</span></label>
+  <textarea
+    id="comments"
+    name="comments"
+    rows="8"
+    cols="80"
+    placeholder="¿Qué necesitas?"
+    required
+  ></textarea>
+
   <div>
     <input class="send" type="submit" value="ENVIAR" />
   </div>
