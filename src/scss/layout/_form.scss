@@ -7,10 +7,8 @@
 .asterisk {
   color: $primary-color2;
 }
-
 .main-contact .wrapper {
   text-align: center;
-
   & .contact {
     color: $primary-color;
     font-family: $secondary-font;
@@ -29,18 +27,17 @@
     margin: 15px 0 60px 0;
   }
 }
-
 .form {
   width: 100%;
   font-family: $primary-font;
   font-size: $xxsmall;
   color: $neutral-color;
-  & div:last-child{
+  & div:last-child {
     margin-bottom: 60px;
   }
-  & div{
+  & div {
     width: 100%;
-    & input{
+    & input {
       height: 45px;
       padding: 0 15px;
       display: block;
@@ -63,11 +60,48 @@
       color: $light-color;
       border: none;
     }
-    & .email{
+    & .email {
       font-size: $small;
     }
   }
 }
-
-
-
+.main-contact .wrapper {
+  @include tablet {
+    padding-left: 163px;
+    padding-right: 163px;
+  }
+  @include display {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+.form {
+  @include tablet {
+    padding-left: 163px;
+    padding-right: 163px;
+    margin-bottom: 60px;
+    & .send {
+      position: absolute;
+      right: 163px;
+      width: 206px;
+    }
+  }
+  @include display {
+    padding-left: 300px;
+    padding-right: 300px;
+    margin-bottom: 120px;
+    & .inline {
+      display: inline-block;
+      & .item1 {
+        width: 395px;
+      }
+      & .item2 {
+        width: 162px;
+      }
+    }
+    & .send {
+      right: 300px;
+      width: 278px;
+    }
+  }
+}

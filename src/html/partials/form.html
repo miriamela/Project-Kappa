@@ -17,30 +17,27 @@
   <div>
     <label>
       Nombre completo <span class="asterisk">*</span>
-      <input type="text" placeholder="Nombre..." id="name" name="name" required/>
+      <input type="text" placeholder="Nombre..." id="name" name="name" required />
     </label>
   </div>
   <div>
     <label>
       Email <span class="asterisk">*</span>
-      <input class="email"
-        type="email"
-        placeholder="Email"
-        value="nombre.apellidos@mail.com"
-        id="email"
-        name="email" required
-      />
+      <input class="inline item1" class="email" type="email" placeholder="Email" value="nombre.apellidos@mail.com"
+        id="email" name="email" required />
     </label>
   </div>
   <div>
     <label>
       Teléfono
-      <input type="tel" placeholder="Ej: 123456789" id="phone" name="phone" />
+      <input class="inline item2" type="tel" placeholder="Ej: 123456789" id="phone" name="phone" />
     </label>
   </div>
   <div>
     <label for="comments">Mensaje <span class="asterisk">*</span></label>
     <textarea id="comments" name="comments" rows="8" cols="80" placeholder="¿Qué necesitas?" required></textarea>
   </div>
-  <div><input class="send" type="submit" value="ENVIAR" /></div>
+  <div>
+    <input class="send" type="submit" value="ENVIAR" />
+  </div>
 </form>
