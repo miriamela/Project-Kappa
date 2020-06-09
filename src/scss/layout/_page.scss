@@ -8,7 +8,8 @@ body {
   padding: 15px;
   margin: auto;
   @media all and (min-width: 768px) {
-    padding: 0 45px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
   @media all and (min-width: 1200px) {
     padding-left: 138px;
