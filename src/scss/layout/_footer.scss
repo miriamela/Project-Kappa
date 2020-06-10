@@ -1,6 +1,6 @@
 .footer {
   background-color: $light-color;
-  border-top: 1px solid $neutral-color;
+  border-top: 1px solid $neutral-color2;
   width: 100%;
   height: 250px;
 
@@ -48,7 +48,7 @@
   /* Menú de Navegación */
 
   & .menu-footer {
-    color: $neutral-color;
+    color: $neutral-color2;
     font-family: $primary-font;
     font-size: $xxsmall;
     font-weight: 600;
@@ -72,39 +72,43 @@
     & .wrapper {
       padding-left: 45px;
       padding-right: 45px;
-      padding-top: 0;
-      position: relative;
-      justify-content: flex-start;
-      align-items: flex-start;
-    }
+      padding-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(2,45px);
 
-    /* Imagen Adalab */
+      /* Imagen Adalab */
 
-    & .logo-item {
-      margin-top: 15px;
-      margin-bottom: 60px;
-      padding: 0px;
-      margin-left: -10px;
-    }
+      & .logo-item {
+        margin-top: 0;
 
-    /* Copyright equipo*/
-
-    & .copyright {
-      margin-bottom: 0px;
-    }
-
-    /* Menú de Navegación */
-    & .menu-footer {
-      position: absolute;
-      right: 45px;
-      top: 25px;
-
-      & ul {
-        text-align: right;
-        padding: 0;
-        line-height: 30px;
-        margin: 0;
+        margin-left: -10px;
+        order: 0;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        align-self: start;
       }
+
+      /* Menú de Navegación */
+      & .menu-footer {
+        grid-column: 2/4;
+        grid-row: span 2;
+        margin-right: 0;
+
+        & ul {
+          text-align: right;
+          padding: 0;
+          line-height: 30px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  @media all and (min-width: 1200px) {
+    & .wrapper {
+      padding-left: 138px;
+      padding-right: 138px;
     }
   }
 }
