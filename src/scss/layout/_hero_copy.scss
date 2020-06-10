@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: flex-end;
   }
-  & .quote {
+  & .quote-copy {
     transform: translate(0, 50%);
     background-color: $light-color;
     padding: 15px;
@@ -24,6 +24,7 @@
     font-weight: 600;
     width: 290px;
     margin: 0 auto;
+    display: none;
 
     @media all and (min-width: 768px) {
       transform: translate(0, 0);
