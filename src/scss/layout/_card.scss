@@ -191,7 +191,7 @@
 }
 .wrapper {
   @include display {
-    .description {
+    .name .description {
       width: 70%;
       text-align: left;
       padding-top: 5px;
