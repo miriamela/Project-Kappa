@@ -8,6 +8,7 @@
   font-weight: 500;
   width: 100%;
 }
+
 .name {
   display: flex;
   flex-direction: column;
@@ -16,6 +17,10 @@
   align-items: center;
   width: 100%;
 
+  &:hover {
+    animation: pulse;
+    animation-duration: 2s;
+  }
   /* border: 1px solid red; */
 }
 .name-left {
@@ -26,6 +31,10 @@
   align-items: center;
   width: 100%;
 
+  &:hover {
+    animation: pulse;
+    animation-duration: 2s;
+  }
   /* border: 1px solid red; */
 }
 .picture {
