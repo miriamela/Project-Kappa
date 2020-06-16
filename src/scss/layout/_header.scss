@@ -66,6 +66,9 @@
   height: 60px;
   width: 100%;
   object-fit: contain;
+  animation: bounceInLeft;
+  animation-duration: 3s linear;
+  animation-iteration-count: 1;
 }
 
 .menu1 {
