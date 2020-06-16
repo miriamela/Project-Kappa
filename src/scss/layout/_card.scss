@@ -18,8 +18,8 @@
   width: 100%;
 
   &:hover {
-    animation: pulse;
-    animation-duration: 2s;
+    transform: scale(1.05);
+    transition: transform ease-out 0.5s;
   }
   /* border: 1px solid red; */
 }
@@ -32,8 +32,8 @@
   width: 100%;
 
   &:hover {
-    animation: pulse;
-    animation-duration: 2s;
+    transform: scale(1.05);
+    transition: transform ease-out 0.5s;
   }
   /* border: 1px solid red; */
 }
@@ -107,6 +107,11 @@
 
       & i {
         color: $primary-color;
+        &:hover {
+          transform: scale(1.2);
+          color: $buttons-color;
+          transition: transform ease-out 0.5s;
+        }
       }
     }
   }
