@@ -53,6 +53,22 @@
   display: inline-block;
   margin: 0px;
   width: 30%;
+  animation-name: intro;
+  // animation: zoomIn;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+
+  @keyframes intro {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
 
   @media all and (min-width: 768px) {
     height: 70%;
@@ -74,7 +90,12 @@
   background-color: rgba(20, 217, 196, 0.9);
 
   @media all and (min-width: 768px) {
+    height: 60px;
     background-color: transparent;
+  }
+
+  & .wrapper {
+    padding: 12px;
   }
 
   & .menu2 {
@@ -87,7 +108,7 @@
     font-weight: 500;
 
     @media all and (min-width: 768px) {
-      margin-top: 10px;
+      margin-top: 12px;
     }
   }
 }
@@ -95,8 +116,56 @@
 .menu2 li a {
   display: inline-block;
   color: white; /*NO FUNCIONA LA VARIABLE*/
-}
+  letter-spacing: 0;
+  animation-name: intro;
+  // animation: zoomIn;
+  animation-duration: 3.5s;
+  animation-iteration-count: 1;
 
+  @keyframes intro {
+    from {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    letter-spacing: 3px;
+    font-weight: 400;
+  }
+
+  &:after,
+  &:before {
+    backface-visibility: hidden;
+    border: 1px solid rgba($light-color, 0);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 1s ease-in-out;
+    width: 0;
+  }
+
+  &:hover:after,
+  &:hover:before {
+    backface-visibility: hidden;
+    border-color: $light-color;
+    transition: width 0.5s ease-in-out;
+    width: 70%;
+  }
+
+  &:hover:before {
+    bottom: auto;
+    top: -2px;
+    width: 70%;
+  }
+}
 //MEDIAQUERIES
 
 @media all and (min-width: 768px) {
@@ -109,7 +178,4 @@
     padding: 10px;
     font-size: $small;
   }
-}
-
-@media all and (min-width: 1200px) {
 }
