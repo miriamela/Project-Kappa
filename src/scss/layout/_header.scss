@@ -143,7 +143,8 @@
   &:before {
     backface-visibility: hidden;
     border: 1px solid rgba($light-color, 0);
-    bottom: 0px;
+    top: -2px;
+    bottom: 0;
     content: " ";
     display: block;
     margin: 0 auto;
