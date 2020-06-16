@@ -5,7 +5,7 @@
   height: 60px;
 
   @media all and (min-width: 768px) {
-    background-color: $primary-color;
+    background-color: rgba(9, 157, 141, 0.95);
   }
 
   & .header-container {
@@ -30,6 +30,7 @@
       height: 60px;
 
       @media all and (min-width: 768px) {
+        background-color: rgba(9, 157, 141, 0);
         width: 20%;
       }
     }
