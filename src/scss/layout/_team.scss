@@ -5,11 +5,11 @@
     padding-top: 30px;
     padding-bottom: 30px;
     & .animation{
-      box-shadow: 0 0 0;
+      box-shadow: 0 0 0 0;
       transition-property: all;
+      transition: transform ease-out 1s;
       &:hover{
         transform: scale(1.05);
-        transition: transform ease-out 1s;
         box-shadow: 6px 7px 12px 11px rgba(227,220,227,1);
         border-radius: 15px;
       }
@@ -62,10 +62,23 @@
 .secondary {
   background-color: rgba(84, 88, 90, 0.2);
   text-align: center;
-
+  
   & .vertical-padding-l {
     padding-top: 30px;
     padding-bottom: 45px;
+
+    & .secondary-article{
+      box-shadow: 0 0 0 0;
+      transition-property: all;
+      transition: transform ease-out 1s;
+
+      &:hover{
+        padding:0;
+        transform: scale(1.05);
+        box-shadow: 6px 7px 12px 6px rgba(168,161,168,1);
+        border-radius: 15px;
+      }
+    }
     @media all and (min-width: 768px) {
       padding-top: 45px;
       padding-bottom: 60px;
