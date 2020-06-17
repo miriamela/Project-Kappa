@@ -4,6 +4,16 @@
   & .vertical-padding-s {
     padding-top: 30px;
     padding-bottom: 30px;
+    & .animation{
+      box-shadow: 0 0 0;
+      transition-property: all;
+      &:hover{
+        transform: scale(1.05);
+        transition: transform ease-out 1s;
+        box-shadow: 6px 7px 12px 11px rgba(227,220,227,1);
+        border-radius: 15px;
+      }
+    }
     @media all and (min-width:768px) {
       padding-top: 45px;
       padding-bottom: 30px;
