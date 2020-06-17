@@ -117,10 +117,16 @@
   display: inline-block;
   color: white; /*NO FUNCIONA LA VARIABLE*/
   letter-spacing: 0;
+  border-bottom: 0px solid $light-color;
   animation-name: intro;
   // animation: zoomIn;
   animation-duration: 3.5s;
   animation-iteration-count: 1;
+
+  &:hover {
+    border-bottom: 1px solid $light-color;
+    transition: all 0.5s ease-in-out;
+  }
 
   @keyframes intro {
     from {
@@ -132,39 +138,6 @@
       transform: scale(1);
       opacity: 1;
     }
-  }
-
-  &:hover {
-    letter-spacing: 3px;
-    font-weight: 400;
-  }
-
-  &:after,
-  &:before {
-    backface-visibility: hidden;
-    border: 1px solid rgba($light-color, 0);
-    top: -2px;
-    bottom: 0;
-    content: " ";
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    transition: all 1s ease-in-out;
-    width: 0;
-  }
-
-  &:hover:after,
-  &:hover:before {
-    backface-visibility: hidden;
-    border-color: $light-color;
-    transition: width 0.5s ease-in-out;
-    width: 70%;
-  }
-
-  &:hover:before {
-    bottom: auto;
-    top: -2px;
-    width: 70%;
   }
 }
 //MEDIAQUERIES
