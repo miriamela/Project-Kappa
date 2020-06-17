@@ -1,317 +1,332 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kappa</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </head>
-  <body>
-    <header class="header-tablet">
-      <div class="header-container">
-        <div class="mainheader">
-          <div class="wrapper">
-            <!-- hay que poner el wrapper dentro del cuadrado del main header (que lleva el color de fondo) para que no haya margen. Probar poniendo el wrapper antes de mainheader para comparar -->
-            <a class="header-logo" href="./index.html" title="Ir a la home">
-              <img src="./assets/images/Kappa.png" alt="Kappa Logo" />
-            </a>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kappa</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <header class="header-tablet">
+    <div class="header-container">
+      <div class="mainheader">
+        <div class="wrapper">
+          <!-- hay que poner el wrapper dentro del cuadrado del main header (que lleva el color de fondo) para que no haya margen. Probar poniendo el wrapper antes de mainheader para comparar -->
+          <a class="header-logo" href="./index.html" title="Ir a la home">
+            <img src="./assets/images/Kappa.png" alt="Kappa Logo" />
+          </a>
         </div>
-        <nav class="menu1">
-          <div class="wrapper">
-            <ul class="menu2">
-              <li><a href="./index.html#team">EQUIPO</a></li>
-              <li><a href="./index.html#who-are">QUIÉNES SOMOS</a></li>
-              <li><a href="./contact.html">CONTACTO</a></li>
+      </div>
+      <nav class="menu1">
+        <div class="wrapper">
+          <ul class="menu2">
+            <li><a class="team" href="./index.html#team">EQUIPO</a></li>
+            <li><a class="who" href="./index.html#who-are">QUIÉNES SOMOS</a></li>
+            <li><a class="contact" href="./contact.html">CONTACTO</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrapper">
+        <h2 class="quote">
+          <span class="quote_question">- No toques, ¿por qué tocas?</span>
+          <span class="quote_answer">- La he liado parda...</span>
+        </h2>
+      </div>
+    </section>
+
+    <article class="main-article" id="team">
+      <div class="wrapper vertical-padding-s">
+        <h2 class="main">EQUIPO</h2>
+        <p>
+          Mitad humanas y mitad anfibias, comedoras de pepinos y habitadoras de lagunas profundas. Dejamos nuestra lúgubre y dulce morada para darle al código e introducirnos en la oscuridad de Git.
+        </p>
+        <p>
+          Nos enfrentamos en cada combate con café y una terminal bajo el brazo. Git
+          clone, Git pull y Git push siempre son nuestros mejores amigos.
+        </p>
+      </div>
+    </article>
+
+    <div class="square"></div>
+
+    <section class="secondary">
+      <div class="wrapper vertical-padding-l">
+        <article class="secondary-article">
+          <h3>Fortalezas</h3>
+          <p>
+            Somos perseverantes y nos gusta demasiado el café y la manzanilla (que
+            hay alguna que otra andaluza en el grupo). La casualidad nos convirtió
+            en grupo y nosotras le dimos al destino nuestro compromiso, trabajo y
+            compañerismo.
+          </p>
+        </article>
+
+        <article class="secondary-article">
+          <h3>Debilidades</h3>
+          <p>
+            Contamos con poca experiencia en Git, nos pegamos con Gulp y Sass, y
+            salimos heridas de los merge. Pero siempre con una sonrisa y con las
+            ganas de no perecer en el intento.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrapper" id="who-are">
+      <h2 class="title-tab">QUIÉNES SOMOS</h2>
+      <article class="name">
+        <div class="picture">
+          <img src="../assets/images/yunji.svg" alt="foto" class="foto" />
+        </div>
+        <div class="description">
+          <h4>Junyi Ji</h4>
+          <p>
+            Durante los últimos años me he dedicado a la enseñanza de chino, al
+            training y asesoramiento en un call center. El resto del tiempo lo he
+            pasado como exploradora de lugares recónditos y estratega de juegos de
+            mesa. Continúo el camino improvisando acordes en ukelele, aprendiendo
+            kanjis en japonés y, muy pronto, programando.
+          </p>
+          <div class="icons">
+            <ul class="list-icons">
+              <li>
+                <a href="https://twitter.com/junneptune" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/junyi-ji-60895a184/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/iunyi" target="_blank">
+                  <i class="fab fa-github-alt"></i>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:junyiji@gmail.com" target="_blank"
+                  ><i class="fa fa-envelope"></i
+                ></a>
+              </li>
             </ul>
           </div>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="wrapper">
-          <h2 class="quote">
-            <span>- No toques, ¿por qué tocas?</span>
-            <span>- La he liado parda...</span>
-          </h2>
-        </div>
-      </section>
-
-      <article class="main-article" id="team">
-        <div class="wrapper vertical-padding-s">
-          <h2 class="main">EQUIPO</h2>
-          <p>
-            Mitad humanas y mitad anfibias, comedoras de pepinos y habitadoras de lagunas profundas. Dejamos nuestra lúgubre y dulce morada para darle al código e introducirnos en la oscuridad de Git.
-          </p>
-          <p>
-            Nos enfrentamos en cada combate con café y una terminal bajo el brazo. Git
-            clone, Git pull y Git push siempre son nuestros mejores amigos.
-          </p>
         </div>
       </article>
-
-      <div class="square"></div>
-
-      <section class="secondary">
-        <div class="wrapper vertical-padding-l">
-          <article class="secondary-article">
-            <h3>Fortalezas</h3>
-            <p>
-              Somos perseverantes y nos gusta demasiado el café y la manzanilla (que
-              hay alguna que otra andaluza en el grupo). La casualidad nos convirtió
-              en grupo y nosotras le dimos al destino nuestro compromiso, trabajo y
-              compañerismo.
-            </p>
-          </article>
-
-          <article class="secondary-article">
-            <h3>Debilidades</h3>
-            <p>
-              Contamos con poca experiencia en Git, nos pegamos con Gulp y Sass, y
-              salimos heridas de los merge. Pero siempre con una sonrisa y con las
-              ganas de no perecer en el intento.
-            </p>
-          </article>
+      <article class="name-left">
+        <div class="picture">
+          <img src="../assets/images/laura.svg" alt="foto" class="foto" />
         </div>
-      </section>
-
-      <section class="wrapper" id="who-are">
-        <h2 class="title-tab">QUIÉNES SOMOS</h2>
-        <article class="name">
-          <div class="picture">
-            <img src="./assets/images/junyi.jpg" alt="foto" class="foto" />
+        <div class="description">
+          <h4>Laura Moreaux</h4>
+          <p>
+            ¡Hola! Tras 5 años dedicados al Retail y 5 años al Turismo, con gran
+            entusiasmo me inicio en el mundo de la Programación Web. Tras el
+            Bootcamp de Adalab y en solo 3 meses, conseguí conocimientos técnicos en
+            HTML, CSS, JavaScript y React, y reforzé habilidades como la
+            adaptabilidad o el trabajo en equipo. Mis aficiones son viajar,
+            disfrutar de la naturaleza y rodearme de buena compañía.
+          </p>
+          <div class="icons">
+            <ul class="list-icons">
+              <li>
+                <a href="https://twitter.com/Lau_Moreaux" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://es.linkedin.com/in/laura-moreaux-cueto-1351477b"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/LauraMoreaux" target="_blank">
+                  <i class="fab fa-github-alt"></i>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:lauramoreauxcueto@gmail.com" target="_blank">
+                  <i class="fa fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="description">
-            <h4>Junyi Ji</h4>
-            <p>
-              Durante los últimos años me he dedicado a la enseñanza de chino, al
-              training y asesoramiento en un call center. El resto del tiempo lo he
-              pasado como exploradora de lugares recónditos y estratega de juegos de
-              mesa. Continúo el camino improvisando acordes en ukelele, aprendiendo
-              kanjis en japonés y, muy pronto, programando.
-            </p>
-            <div class="icons">
-              <ul class="list-icons">
-                <li>
-                  <a href="https://twitter.com/junneptune" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/junyi-ji-60895a184/"
-                    target="_blank"
-                  >
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/iunyi" target="_blank">
-                    <i class="fab fa-github-alt"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:junyiji@gmail.com" target="_blank"
-                    ><i class="fa fa-envelope"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-        <article class="name-left">
-          <div class="picture">
-            <img src="./assets/images/laura.jpg" alt="foto" class="foto" />
-          </div>
-          <div class="description">
-            <h4>Laura Moreaux</h4>
-            <p>
-              ¡Hola! Tras 5 años dedicados al Retail y 5 años al Turismo, con gran
-              entusiasmo me inicio en el mundo de la Programación Web. Tras el
-              Bootcamp de Adalab y en solo 3 meses, conseguí conocimientos técnicos en
-              HTML, CSS, JavaScript y React, y reforzé habilidades como la
-              adaptabilidad o el trabajo en equipo. Mis aficiones son viajar,
-              disfrutar de la naturaleza y rodearme de buena compañía.
-            </p>
-            <div class="icons">
-              <ul class="list-icons">
-                <li>
-                  <a href="https://twitter.com/Lau_Moreaux" target="_blank"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="https://es.linkedin.com/in/laura-moreaux-cueto-1351477b"
-                    target="_blank"
-                  >
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/LauraMoreaux" target="_blank">
-                    <i class="fab fa-github-alt"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:lauramoreauxcueto@gmail.com" target="_blank">
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-        <article class="name">
-          <div class="picture">
-            <img src="./assets/images/marisol.jpg" alt="foto" class="foto" />
-          </div>
-          <div class="description">
-            <h4>Marisol Peña</h4>
-            <p>
-              ¡Hola! Soy Marisol, Content Specialist y UX Writer por alma y destino.
-              Hoy, busco un nuevo horizonte en mi camino, ¡eso sí! sin alejarme mucho
-              del mundo de la comunicación. Codifico mi mensaje para un nuevo
-              receptor: los ordenadores son ahora mi mejor amigo. Siempre por bandera:
-              “claro, breve y conciso, dos veces bueno”.
-            </p>
-            <div class="icons">
-              <ul class="list-icons">
-                <li>
-                  <a href="https://twitter.com/PgMarisol" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/marisol-pena-gomez/"
-                    target="_blank"
-                  >
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/masopego" target="_blank">
-                    <i class="fab fa-github-alt"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:masopego@gmail.com" target="_blank">
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-        <article class="name-left">
-          <div class="picture">
-            <img src="./assets/images/marta.jpg" alt="foto" class="foto" />
-          </div>
-          <div class="description">
-            <h4>Marta García</h4>
-            <p>
-              Soy una madrileña a la que le encanta habitar por todo lo audiovisual.
-              Empecé por la fotografía, pasando por el cine, la postproducción de vídeo y recientemente vivo en el mundo del diseño y la programación de productos digitales. Me alimento de chocolate negro y brócoli.
-            </p>
-            <div class="icons">
-              <ul class="list-icons">
-                <li>
-                  <a href="https://twitter.com/_MartaVara_" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/marta-garc%C3%ADa-abad-6b28b2154/"
-                    target="_blank"
-                  >
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/MartaVara-WD" target="_blank">
-                    <i class="fab fa-github-alt"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:hola@martavara.es" target="_blank">
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-        <article class="name">
-          <div class="picture">
-            <img src="./assets/images/miriam.jpg" alt="foto" class="foto" />
-          </div>
-          <div class="description">
-            <h4>Miriam Grossi</h4>
-            <p>
-              Hola, soy Miriam, apasionada de los viajes, la fotografía y los idiomas.
-              Tengo un pasado oculto como profe en la universidad y uno más reciente,
-              y menos oculto, en el mundo de la traducción y el análisis de
-              contenidos. Hace poco menos de un año se me cruzaron los cables y
-              después de acercarme al mundo del diseño web escogí empezar una segunda
-              vida como programadora. Con mucho orgullo, ahora puedo decir que estoy
-              en ello, aprendiendo, cada día más encantada y segura de que eso es lo
-              que quiero para mí.
-            </p>
-            <div class="icons">
-              <ul class="list-icons">
-                <li>
-                  <a href="https://twitter.com/MiriamGrossi1  " target="_blank">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/miriamgrossi/" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/miriamela" target="_blank">
-                    <i class="fab fa-github-alt"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:grossi.miriam@gmail.com" target="_blank">
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-      </section>
-
-    </main>
-    <footer class="footer">
-      <div class="wrapper">
-        <div class="copyright">
-          <h5>Kappa &copy; 2020</h5>
         </div>
-        <a href="https://adalab.es/" class="logo-item">
-          <img src="./assets/images/logo-adalab.png" alt="Adalab" />
-        </a>
-        <nav class="menu-footer">
-          <ul>
-            <li><a href="./index.html#team">EQUIPO</a></li>
-            <li><a href="./index.html#who-are">QUIÉNES SOMOS</a></li>
-            <li><a href="./contact.html">CONTACTO</a></li>
-          </ul>
-        </nav>
+      </article>
+      <article class="name">
+        <div class="picture">
+          <img src="../assets/images/marisol.svg" alt="foto" class="foto" />
+        </div>
+        <div class="description">
+          <h4>Marisol Peña</h4>
+          <p>
+            ¡Hola! Soy Marisol, Content Specialist y UX Writer por alma y destino.
+            Hoy, busco un nuevo horizonte en mi camino, ¡eso sí! sin alejarme mucho
+            del mundo de la comunicación. Codifico mi mensaje para un nuevo
+            receptor: los ordenadores son ahora mi mejor amigo. Siempre por bandera:
+            “claro, breve y conciso, dos veces bueno”.
+          </p>
+          <div class="icons">
+            <ul class="list-icons">
+              <li>
+                <a href="https://twitter.com/PgMarisol" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/marisol-pena-gomez/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/masopego" target="_blank">
+                  <i class="fab fa-github-alt"></i>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:masopego@gmail.com" target="_blank">
+                  <i class="fa fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article class="name-left">
+        <div class="picture">
+          <img src="../assets/images/marta.svg" alt="foto" class="foto" />
+        </div>
+        <div class="description">
+          <h4>Marta García</h4>
+          <p>
+            Soy una madrileña a la que le encanta habitar por todo lo audiovisual.
+            Empecé por la fotografía, pasando por el cine, la postproducción de
+            vídeo y recientemente vivo en el mundo del diseño y la programación de
+            productos digitales. Me alimento de chocolate negro y brócoli.
+          </p>
+          <div class="icons">
+            <ul class="list-icons">
+              <li>
+                <a href="https://twitter.com/_MartaVara_" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/marta-garc%C3%ADa-abad-6b28b2154/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/MartaVara-WD" target="_blank">
+                  <i class="fab fa-github-alt"></i>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:hola@martavara.es" target="_blank">
+                  <i class="fa fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article class="name">
+        <div class="picture">
+          <img src="../assets/images/miriam.svg" alt="foto" class="foto" />
+        </div>
+        <div class="description">
+          <h4>Miriam Grossi</h4>
+          <p>
+            Hola, soy Miriam, apasionada de los viajes, la fotografía y los idiomas.
+            Tengo un pasado oculto como profe en la universidad y uno más reciente,
+            y menos oculto, en el mundo de la traducción y el análisis de
+            contenidos. Hace poco menos de un año se me cruzaron los cables y
+            después de acercarme al mundo del diseño web escogí empezar una segunda
+            vida como programadora. Con mucho orgullo, ahora puedo decir que estoy
+            en ello, aprendiendo, cada día más encantada y segura de que eso es lo
+            que quiero para mí.
+          </p>
+          <div class="icons">
+            <ul class="list-icons">
+              <li>
+                <a href="https://twitter.com/MiriamGrossi1" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/miriamgrossi/" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/miriamela" target="_blank">
+                  <i class="fab fa-github-alt"></i>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:grossi.miriam@gmail.com" target="_blank">
+                  <i class="fa fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="copyright">
+        <h5>Kappa &copy; 2020</h5>
       </div>
-    </footer>
+      <a href="https://adalab.es/" class="logo-item">
+        <img src="./assets/images/logo-adalab.png" alt="Adalab" />
+      </a>
+      <nav class="menu-footer">
+        <ul>
+          <li><a href="./index.html#team">EQUIPO</a></li>
+          <li><a href="./index.html#who-are">QUIÉNES SOMOS</a></li>
+          <li><a href="./contact.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="pop--up">
+      <div class="wrapper">
+        <p>
+          ¡Hola! El equipo Kappa <span class="uppercase">no</span> utiliza 🍪🍪
+          para mejorar sus servicios, porque somos más de un buen
+          <span class="uppercase">brownie</span>. Si en unos segundos sigues
+          conociéndonos, entenderemos que aceptas este uso.
+          <span class="line-break">¡Gracias por tu comprensión! 😃😃 </span>
+        </p>
+      </div>
+    </div>
+  </footer>
 
-  </body>
+</body>
+
 </html>

@@ -4,6 +4,14 @@
   & .vertical-padding-s {
     padding-top: 30px;
     padding-bottom: 30px;
+    & .animation{
+      transition-property: all;
+      transition: transform ease-out .5s;
+      &:hover{
+        transform: scale(1.05);
+        border-radius: 15px;
+      }
+    }
     @media all and (min-width:768px) {
       padding-top: 45px;
       padding-bottom: 30px;
@@ -52,10 +60,21 @@
 .secondary {
   background-color: rgba(84, 88, 90, 0.2);
   text-align: center;
-
+  
   & .vertical-padding-l {
     padding-top: 30px;
     padding-bottom: 45px;
+
+    & .secondary-article{
+      transition-property: all;
+      transition: transform ease-out .5s;
+
+      &:hover{
+        padding:0;
+        transform: scale(1.05);
+        border-radius: 15px;
+      }
+    }
     @media all and (min-width: 768px) {
       padding-top: 45px;
       padding-bottom: 60px;
