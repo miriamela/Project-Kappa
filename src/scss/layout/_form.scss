@@ -30,6 +30,25 @@
   & div:last-child {
     margin-bottom: 60px;
   }
+  & label{
+    &:first-child{
+      display: inline-block;
+      width: 100%;
+    }
+    transition: transform all ease .5s;
+    &:hover{
+      transform: scale(1.02);
+    }
+    & .textarea{
+        display: inline-block;
+        width: 100%;
+        transition: transform all ease .5s;
+      &:hover{
+        transform: scale(1.02);
+        background-color: green;
+      }
+    }
+  }
   //& div {
   // width: 100%;
   & input {

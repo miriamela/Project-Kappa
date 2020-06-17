@@ -7,10 +7,10 @@
     & .animation{
       box-shadow: 0 0 0 0;
       transition-property: all;
-      transition: transform ease-out 1s;
+      transition: transform ease-out .5s;
       &:hover{
         transform: scale(1.05);
-        box-shadow: 6px 7px 12px 11px rgba(227,220,227,1);
+        //box-shadow: 6px 7px 12px 11px rgba(227,220,227,1);
         border-radius: 15px;
       }
     }
@@ -70,12 +70,12 @@
     & .secondary-article{
       box-shadow: 0 0 0 0;
       transition-property: all;
-      transition: transform ease-out 1s;
+      transition: transform ease-out .5s;
 
       &:hover{
         padding:0;
         transform: scale(1.05);
-        box-shadow: 6px 7px 12px 6px rgba(168,161,168,1);
+        //box-shadow: 6px 7px 12px 6px rgba(168,161,168,1);
         border-radius: 15px;
       }
     }
