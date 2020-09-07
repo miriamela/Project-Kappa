@@ -12,4 +12,4 @@ El grupo Kappa está integrado por:
 - **Laura Moreaux**
 - **Marisol Peña**
 - **Marta García**
-- **Miriam Grossi**
+- **Miriam Grossi** 
